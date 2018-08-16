@@ -1,3 +1,5 @@
+@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css);
+
 /* You can find detailed information at https://wiki.simplemachines.org/smf/Curve2_CSS
 /* Index */
 html {
@@ -3191,7 +3193,6 @@ div#pollmoderation {
 	float: left;
 	text-align: center;
 	/* Don't set this in em.It will eat too much space if people need to set large text sizes. */
-	width: 160px;
 	-webkit-hyphens: auto;
 	-ms-hyphens: auto;
 	hyphens: auto;
@@ -4726,4 +4727,33 @@ td .avatar {
 }
 .topic_table td {
     font-size: 14px;
+}
+@media (max-width: 991px) {
+.col-sm-2 {
+    margin: 0;
+    padding: 0;
+}
+.user_info li.avatar {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: 10px;
+    margin-top: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.poster h4 {
+    display: block;
+    font-size: 20px;
+    border-radius: 4px 4px 0 0;
+    border-bottom: 1px solid #ccc;
+    background-color: #fcfcfc;
+    padding: 17px 70px 16px 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.user_info li.icons, .poster li.membergroup, .postgroup, .postcount, .profile, .im_icons {
+    display: none;
+}
 }

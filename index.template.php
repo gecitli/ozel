@@ -43,8 +43,6 @@ function template_init()
 	global $settings, $txt;
 
 	loadCSSFile('fontawesome-all.css');
-	echo '
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">';
 	/* $context, $options and $txt may be available for use, but may not be fully populated yet. */
 
 	// The version this template/theme is for. This should probably be the version of SMF it was created for.
