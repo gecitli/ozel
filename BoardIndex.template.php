@@ -143,7 +143,7 @@ function template_bi_board_icon($board)
 	global $context, $scripturl;
 
 	echo '
-						<a href="', ($context['user']['is_guest'] ? $board['href'] : $scripturl . '?action=unread;board=' . $board['id'] . '.0;children'), '"', !empty($board['board_tooltip']) ? ' title="' . $board['board_tooltip'] . '"' : '', '><i class="fa fa-board_', $board['board_class'], ' fa-3x"></i></a>';
+						<a href="', ($context['user']['is_guest'] ? $board['href'] : $scripturl . '?action=unread;board=' . $board['id'] . '.0;children'), '"', !empty($board['board_tooltip']) ? ' title="' . $board['board_tooltip'] . '"' : '', '><i class="far fas fa-board_', $board['board_class'], ' fa-3x"></i></a>';
 }
 
 /**
